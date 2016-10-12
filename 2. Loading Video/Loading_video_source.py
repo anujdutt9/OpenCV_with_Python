@@ -1,9 +1,9 @@
 # Show real time video from Camera
 # Write the Video to .avi file
 
-import cv2
-import matplotlib.pyplot as plt
-import numpy as np
+import cv2                                                      # Import OpenCV
+import matplotlib.pyplot as plt                                 # Import Pyplot from Matplotlib
+import numpy as np                                              # Import Numpy
 
 cap = cv2.VideoCapture(0)               						# Access Default Webcam : 0
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -24,3 +24,5 @@ while True:
 cap.release()                           						# Release Camera Capture
 out.release()                           						# Release Video Writing
 cv2.destroyAllWindows()                 						#Destroy all Windows
+
+#----------------- EOC -------------------#
