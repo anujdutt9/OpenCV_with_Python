@@ -5,7 +5,7 @@ import cv2                                                      # Import OpenCV
 import matplotlib.pyplot as plt                                 # Import Pyplot from Matplotlib
 import numpy as np                                              # Import Numpy
 
-cap = cv2.VideoCapture(0)               						# Access Default Webcam : 0
+cap = cv2.VideoCapture(0)                                       # Access Default Webcam : 0
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480))     # Output File; Codec; 20fps; Window Size 
 
