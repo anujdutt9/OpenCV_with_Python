@@ -11,18 +11,18 @@ out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480))     # Output File; C
 
 
 while True:
-    ret, frame = cap.read()             						# Open the camera and Start Viewing
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  			# Convert color to Grayscale
-    out.write(gray)                     						# Write the Video File
-    cv2.imshow('frame',frame)           						# Colored Video
-    cv2.imshow('gray',gray)             						# Grayscale Video
+    ret, frame = cap.read()                                     # Open the camera and Start Viewing
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)              # Convert color to Grayscale
+    out.write(gray)                                             # Write the Video File
+    cv2.imshow('frame',frame)                                   # Colored Video
+    cv2.imshow('gray',gray)                                     # Grayscale Video
     
     # If Key Pressed, Break out of code
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-cap.release()                           						# Release Camera Capture
-out.release()                           						# Release Video Writing
-cv2.destroyAllWindows()                 						#Destroy all Windows
+cap.release()                                                   # Release Camera Capture
+out.release()                                                   # Release Video Writing
+cv2.destroyAllWindows()                                         # Destroy all Windows and exit
 
 #----------------- EOC -------------------#
