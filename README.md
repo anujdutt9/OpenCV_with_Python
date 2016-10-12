@@ -4,7 +4,7 @@ Currently all code is Written and Compiled in Python3.
 
 Tools Required:                                                                                                                           
 1. Python3                                                                                                                                 
-2. Numpy 
+2. Numpy                                                                                                                                  
 3. Matplotlib                                                                                                                             
 4. OpenCV
                                                                                                                                            
