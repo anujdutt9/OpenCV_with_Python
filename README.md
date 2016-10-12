@@ -2,7 +2,7 @@
 This repository contains the code for Introduction to OpenCV using Python. 
 Currently all code is Written and Compiled in Python3.
 
-Tools Required:
+Tools Required:                                                                                                                           
 1. Python3
 2. Numpy
 3. Matplotlib
